@@ -20,6 +20,7 @@ public class Environment : MonoBehaviour
     [SerializeField] int rewardFreq;
     [SerializeField] int kickReward;
     [SerializeField] int debugFreq;
+    [SerializeField] bool enableKickRew;
     int counter;
     int debugCounter;
     void Awake()
@@ -35,12 +36,12 @@ public class Environment : MonoBehaviour
     }
 
     void FixedUpdate() {
-        counter++;
+        /*counter++;
         if (counter >= rewardFreq) {
             //Debug.Log("updating rewards for agents...");
             updateRewards();
             counter = 0;
-        }
+        }*/
     }
 
     public void resetEnv(bool soft) {
@@ -95,8 +96,10 @@ public class Environment : MonoBehaviour
     }
 
     public void kick(bool blueKick) {
-        giveReward(blueKick, kickReward);
-        giveReward(!blueKick, -kickReward);
+        if (enableKickRew) {
+            giveReward(blueKick, kickReward);
+            giveReward(!blueKick, -kickReward);
+        }
     }
 
     void giveReward(bool blue, float val) {

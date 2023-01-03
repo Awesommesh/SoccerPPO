@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int rewardFreq;
     [SerializeField] int kickReward;
     [SerializeField] int debugFreq;
+    [SerializeField] bool enableKickRew;
     int counter;
     int debugCounter;
 
@@ -44,12 +45,12 @@ public class GameManager : MonoBehaviour
     }
 
     void FixedUpdate() {
-        counter++;
+        /*counter++;
         if (counter >= rewardFreq) {
             Debug.Log("updating rewards for agents...");
             updateRewards();
             counter = 0;
-        }
+        }*/
     }
 
     public void resetEnv(bool soft) {
@@ -100,12 +101,15 @@ public class GameManager : MonoBehaviour
 
     public void goal(bool blueGoal) {
         giveReward(blueGoal, goalReward);
-        //giveReward(!blueGoal, -goalReward);
+        giveReward(!blueGoal, -goalReward);
     }
 
     public void kick(bool blueKick) {
-        giveReward(blueKick, kickReward);
-        //giveReward(!blueKick, -kickReward);
+        if (enableKickRew) {
+            giveReward(blueKick, kickReward);
+            giveReward(!blueKick, -kickReward);
+        }
+       
     }
 
     void giveReward(bool blue, float val) {

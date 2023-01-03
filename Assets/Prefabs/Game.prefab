@@ -543,6 +543,14 @@ PrefabInstance:
       propertyPath: env
       value: 
       objectReference: {fileID: 8555821189604553421}
+    - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: m_InferenceDevice
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045581, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -672,6 +680,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red3
       objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_InferenceDevice
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: env
       value: 
@@ -731,7 +747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_InferenceDevice
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045581, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_RootOrder
@@ -836,7 +856,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_InferenceDevice
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045581, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_RootOrder
@@ -971,6 +995,14 @@ PrefabInstance:
       propertyPath: m_Model
       value: 
       objectReference: {fileID: 11400000, guid: 68991653e04394f95b15a222253c0729, type: 3}
+    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_InferenceDevice
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: env
       value: 
@@ -1470,6 +1502,14 @@ PrefabInstance:
     - target: {fileID: 4947889451794949722, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_Name
       value: Red1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_InferenceDevice
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: env
