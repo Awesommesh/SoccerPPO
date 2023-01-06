@@ -1,116 +1,122 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.MLAgents;
 using UnityEngine;
 
 public class Environment : MonoBehaviour
 {
-    public SoccerAgent [] blueTeam;
-    public SoccerAgent [] redTeam;
-    public Transform ball;
-    public Rigidbody ballRbdy;
-    public Transform blueGoal;
-    public Transform redGoal;
-    public float moveSpd;
-    public float punishScale;
-    public float randomRepos;
-    [SerializeField] float goalReward;
-    private Vector3 origBallPos;
-    public Vector3 [] origBlueTeam;
-    public Vector3 [] origRedTeam;
-    [SerializeField] int rewardFreq;
-    [SerializeField] int kickReward;
-    [SerializeField] int debugFreq;
-    [SerializeField] bool enableKickRew;
-    int counter;
-    int debugCounter;
-    void Awake()
+    //Player Class
+    [System.Serializable]
+    public class PlayerInfo
     {
-        counter = 0;
-        origBlueTeam = new Vector3[blueTeam.Length];
-        origRedTeam = new Vector3[redTeam.Length];
-        origBallPos = ball.position;
-        for (int i = 0; i < blueTeam.Length; i++) {
-            origBlueTeam[i] = blueTeam[i].transform.position;
-            origRedTeam[i] = redTeam[i].transform.position;
+        public SoccerAgent Agent;
+        [HideInInspector]
+        public Vector3 startingPos;
+        [HideInInspector]
+        public Quaternion startingRot;
+        [HideInInspector]
+        public Rigidbody Rb;
+    }
+
+    /// Max Academy steps before this platform resets
+    [Tooltip("Max Environment Steps")] public int maxEnvironmentSteps = 25000;
+
+
+    public GameObject ball;
+    
+    [HideInInspector]
+    public Rigidbody ballRb;
+    Vector3 ballStartingPos;
+
+    //All players
+    public List<PlayerInfo> AgentsList = new List<PlayerInfo>();
+
+    private SoccerSettings soccerSettings;
+
+    private SimpleMultiAgentGroup blueAgentGroup;
+    private SimpleMultiAgentGroup purpleAgentGroup;
+
+    private int resetTimer;
+
+    void Start() {
+        soccerSettings = FindObjectOfType<SoccerSettings>();
+        // Initialize TeamManager
+        blueAgentGroup = new SimpleMultiAgentGroup();
+        purpleAgentGroup = new SimpleMultiAgentGroup();
+        ballRb = ball.GetComponent<Rigidbody>();
+        ballStartingPos = new Vector3(ball.transform.position.x, ball.transform.position.y, ball.transform.position.z);
+        foreach (PlayerInfo item in AgentsList)
+        {
+            item.startingPos = item.Agent.transform.position;
+            item.startingRot = item.Agent.transform.rotation;
+            item.Rb = item.Agent.GetComponent<Rigidbody>();
+            if (item.Agent.blue)
+            {
+                blueAgentGroup.RegisterAgent(item.Agent);
+            }
+            else
+            {
+                purpleAgentGroup.RegisterAgent(item.Agent);
+            }
         }
+        resetEnv();
     }
 
     void FixedUpdate() {
-        /*counter++;
-        if (counter >= rewardFreq) {
-            //Debug.Log("updating rewards for agents...");
-            updateRewards();
-            counter = 0;
-        }*/
-    }
-
-    public void resetEnv(bool soft) {
-        ball.position = origBallPos + new Vector3(Random.Range(-1, 1)*randomRepos, 0, Random.Range(-1, 1)*randomRepos);
-        ballRbdy.velocity = Vector3.zero;
-        ballRbdy.angularVelocity = Vector3.zero;
-        for (int i = 0; i < blueTeam.Length; i++) {
-            blueTeam[i].pos.position = origBlueTeam[i];
-            redTeam[i].pos.position = origRedTeam[i];
+        resetTimer += 1;
+        if (resetTimer >= maxEnvironmentSteps && maxEnvironmentSteps > 0)
+        {
+            blueAgentGroup.GroupEpisodeInterrupted();
+            purpleAgentGroup.GroupEpisodeInterrupted();
+            resetEnv();
         }
-        if (!soft) {
-            counter = 0;
-            debugCounter = 0;
-        }
-    }
-
-    void updateRewards() {
-        //Approach ball tactics
-        float blueDist = 0;
-        float redDist = 0;
-        /*for (int i = 0; i < blueTeam.Length; i++) {
-            blueDist += Vector3.Distance(ball.position, blueTeam[i].pos.position);
-        }
-        for (int i = 0; i < redTeam.Length; i++) {
-            redDist += Vector3.Distance(ball.position, redTeam[i].pos.position);
-        }
-
-        giveReward(true, -blueDist/(punishScale*100));
-        giveReward(false, -redDist/(punishScale*100));
-
-        debugCounter++;
-        if (debugCounter >= debugFreq) {
-            Debug.Log("Blue Reward: " + -blueDist/punishScale);
-            Debug.Log("Red Reward: " + -redDist/punishScale);
-            debugCounter = 0;
-        }*/
-        //Goal based rewards
-        blueDist = Vector3.Distance(redGoal.position, ball.position);
-        redDist = Vector3.Distance(blueGoal.position, ball.position);
-        //Debug.Log(redGoal.position + " goals " + blueGoal.position);
-        //Debug.Log(blueDist + " " + redDist);
-        //Debug.Log("Reward for Blue: " + ((redDist-blueDist)/punishScale));
-        //Debug.Log("Reward for Red: " + ((blueDist-redDist)/punishScale));
-        giveReward(true, ((redDist-blueDist)/punishScale));
-        giveReward(false, ((blueDist-redDist)/punishScale));
-        
     }
 
     public void goal(bool blueGoal) {
-        giveReward(blueGoal, goalReward);
-        giveReward(!blueGoal, -goalReward);
+        if (blueGoal)
+        {
+            blueAgentGroup.AddGroupReward(1 - (float)resetTimer / maxEnvironmentSteps);
+            purpleAgentGroup.AddGroupReward(-1);
+        }
+        else
+        {
+            purpleAgentGroup.AddGroupReward(1 - (float)resetTimer / maxEnvironmentSteps);
+            blueAgentGroup.AddGroupReward(-1);
+        }
+        purpleAgentGroup.EndGroupEpisode();
+        blueAgentGroup.EndGroupEpisode();
+        resetEnv();
     }
 
-    public void kick(bool blueKick) {
-        if (enableKickRew) {
-            giveReward(blueKick, kickReward);
-            giveReward(!blueKick, -kickReward);
-        }
+    public void resetBall()
+    {
+        //random respawn
+        var randomPosX = Random.Range(-2.5f, 2.5f);
+        var randomPosZ = Random.Range(-2.5f, 2.5f);
+
+        ball.transform.position = ballStartingPos + new Vector3(randomPosX, 0f, randomPosZ);
+        ballRb.velocity = Vector3.zero;
+        ballRb.angularVelocity = Vector3.zero;
+
     }
 
-    void giveReward(bool blue, float val) {
-        if (blue) {
-            for (int i = 0; i < blueTeam.Length; i++) {
-                blueTeam[i].addReward(val);
-            }
-        } else {
-            for (int i = 0; i < redTeam.Length; i++) {
-                redTeam[i].addReward(val);
-            }
+    public void resetEnv() {
+        resetTimer = 0;
+
+        //Reset Agents
+        foreach (var item in AgentsList)
+        {
+            var randomPosX = Random.Range(-5f, 5f);
+            var newStartPos = item.Agent.initialPos + new Vector3(randomPosX, 0f, 0f);
+            var rot = item.Agent.rotSign * Random.Range(80.0f, 100.0f);
+            var newRot = Quaternion.Euler(0, rot, 0);
+            item.Agent.transform.SetPositionAndRotation(newStartPos, newRot);
+
+            item.Rb.velocity = Vector3.zero;
+            item.Rb.angularVelocity = Vector3.zero;
         }
+
+        //Reset Ball
+        resetBall();
     }
 }

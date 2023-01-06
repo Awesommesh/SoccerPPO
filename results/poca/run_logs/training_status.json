@@ -1,0 +1,57 @@
+{
+    "SoccerAgent": {
+        "checkpoints": [
+            {
+                "steps": 499070,
+                "file_path": "results/poca/SoccerAgent/SoccerAgent-499070.onnx",
+                "reward": -0.27783994749188423,
+                "creation_time": 1672896993.215669,
+                "auxillary_file_paths": [
+                    "results/poca/SoccerAgent/SoccerAgent-499070.pt"
+                ]
+            },
+            {
+                "steps": 999629,
+                "file_path": "results/poca/SoccerAgent/SoccerAgent-999629.onnx",
+                "reward": null,
+                "creation_time": 1672900040.88449,
+                "auxillary_file_paths": [
+                    "results/poca/SoccerAgent/SoccerAgent-999629.pt"
+                ]
+            },
+            {
+                "steps": 1499375,
+                "file_path": "results/poca/SoccerAgent/SoccerAgent-1499375.onnx",
+                "reward": null,
+                "creation_time": 1672902887.7796988,
+                "auxillary_file_paths": [
+                    "results/poca/SoccerAgent/SoccerAgent-1499375.pt"
+                ]
+            },
+            {
+                "steps": 1696209,
+                "file_path": "results/poca/SoccerAgent/SoccerAgent-1696209.onnx",
+                "reward": -0.39991991221904755,
+                "creation_time": 1672904074.658818,
+                "auxillary_file_paths": [
+                    "results/poca/SoccerAgent/SoccerAgent-1696209.pt"
+                ]
+            }
+        ],
+        "elo": 1195.6944175516173,
+        "final_checkpoint": {
+            "steps": 1696209,
+            "file_path": "results/poca/SoccerAgent.onnx",
+            "reward": -0.39991991221904755,
+            "creation_time": 1672904074.658818,
+            "auxillary_file_paths": [
+                "results/poca/SoccerAgent/SoccerAgent-1696209.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0"
+    }
+}

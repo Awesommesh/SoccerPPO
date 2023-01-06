@@ -1,0 +1,69 @@
+{
+    "ball_touch": {
+        "lesson_num": 0
+    },
+    "SoccerAgent": {
+        "checkpoints": [
+            {
+                "steps": 1999291,
+                "file_path": "results/curriculum/SoccerAgent/SoccerAgent-1999291.onnx",
+                "reward": 0.6435776784740113,
+                "creation_time": 1672999579.4434738,
+                "auxillary_file_paths": [
+                    "results/curriculum/SoccerAgent/SoccerAgent-1999291.pt"
+                ]
+            },
+            {
+                "steps": 2499801,
+                "file_path": "results/curriculum/SoccerAgent/SoccerAgent-2499801.onnx",
+                "reward": 0.35367296466036985,
+                "creation_time": 1673002029.543061,
+                "auxillary_file_paths": [
+                    "results/curriculum/SoccerAgent/SoccerAgent-2499801.pt"
+                ]
+            },
+            {
+                "steps": 2516902,
+                "file_path": "results/curriculum/SoccerAgent/SoccerAgent-2516902.onnx",
+                "reward": 0.2625275787764362,
+                "creation_time": 1673002134.95454,
+                "auxillary_file_paths": [
+                    "results/curriculum/SoccerAgent/SoccerAgent-2516902.pt"
+                ]
+            },
+            {
+                "steps": 2999948,
+                "file_path": "results/curriculum/SoccerAgent/SoccerAgent-2999948.onnx",
+                "reward": -0.02771094523669377,
+                "creation_time": 1673005119.316108,
+                "auxillary_file_paths": [
+                    "results/curriculum/SoccerAgent/SoccerAgent-2999948.pt"
+                ]
+            },
+            {
+                "steps": 3006904,
+                "file_path": "results/curriculum/SoccerAgent/SoccerAgent-3006904.onnx",
+                "reward": -0.029693330094839137,
+                "creation_time": 1673005215.407627,
+                "auxillary_file_paths": [
+                    "results/curriculum/SoccerAgent/SoccerAgent-3006904.pt"
+                ]
+            }
+        ],
+        "elo": 1302.6318467853284,
+        "final_checkpoint": {
+            "steps": 3006904,
+            "file_path": "results/curriculum/SoccerAgent.onnx",
+            "reward": -0.029693330094839137,
+            "creation_time": 1673005215.407627,
+            "auxillary_file_paths": [
+                "results/curriculum/SoccerAgent/SoccerAgent-3006904.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0"
+    }
+}

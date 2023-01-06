@@ -130,22 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 135694408911107783, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135694410485010763, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500935597789782, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500936174566283, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2627456758256043025, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -190,21 +174,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5442189427319817454, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442189427438173713, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8555821189604553420, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_Name
       value: Game (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555821189604553421, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: enableKickRew
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
@@ -215,22 +187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 135694408911107783, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135694410485010763, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500935597789782, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500936174566283, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2627456758256043025, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -275,21 +231,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5442189427319817454, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442189427438173713, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8555821189604553420, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_Name
       value: Game (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555821189604553421, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: enableKickRew
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
@@ -300,22 +244,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 135694408911107783, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135694410485010763, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500935597789782, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500936174566283, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2627456758256043025, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -360,21 +288,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5442189427319817454, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442189427438173713, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8555821189604553420, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_Name
       value: Game (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555821189604553421, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: enableKickRew
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
@@ -385,22 +301,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 135694408911107783, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135694410485010763, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500935597789782, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500936174566283, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2627456758256043025, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -445,21 +345,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5442189427319817454, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442189427438173713, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8555821189604553420, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_Name
       value: Game (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555821189604553421, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: enableKickRew
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
@@ -470,22 +358,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 135694408911107783, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135694410485010763, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500935597789782, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500936174566283, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2627456758256043025, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -530,21 +402,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5442189427319817454, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442189427438173713, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8555821189604553420, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_Name
       value: Game (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555821189604553421, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: enableKickRew
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
@@ -555,22 +415,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 135694408911107783, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135694410485010763, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500935597789782, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500936174566283, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2627456758256043025, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -615,21 +459,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5442189427319817454, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442189427438173713, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8555821189604553420, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_Name
       value: Game (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555821189604553421, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: enableKickRew
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
@@ -640,22 +472,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 135694408911107783, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135694410485010763, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500935597789782, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500936174566283, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2627456758256043025, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -700,21 +516,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5442189427319817454, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442189427438173713, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8555821189604553420, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_Name
       value: Game (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555821189604553421, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: enableKickRew
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
@@ -782,22 +586,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 135694408911107783, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135694410485010763, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500935597789782, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093500936174566283, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2627456758256043025, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -842,21 +630,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5442189427319817454, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442189427438173713, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: m_InferenceDevice
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8555821189604553420, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
       propertyPath: m_Name
       value: Game
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555821189604553421, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
-      propertyPath: enableKickRew
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073ac2797eeaf4c3f823d39f3a01686e, type: 3}
@@ -881,7 +657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalPosition.z

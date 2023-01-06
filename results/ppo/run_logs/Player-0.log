@@ -1,9 +1,9 @@
-Mono path[0] = '/Users/animeshagrawal/repositories/SoccerPPO/env1_5v5.app/Contents/Resources/Data/Managed'
-Mono config path = '/Users/animeshagrawal/repositories/SoccerPPO/env1_5v5.app/Contents/MonoBleedingEdge/etc'
+Mono path[0] = '/Users/animeshagrawal/repositories/SoccerPPO/env5_3v3.app/Contents/Resources/Data/Managed'
+Mono config path = '/Users/animeshagrawal/repositories/SoccerPPO/env5_3v3.app/Contents/MonoBleedingEdge/etc'
 Found 2 interfaces on host : 0) 192.168.18.24 1) 192.168.64.1
-Multi-casting "[IP] 192.168.18.24 [Port] 55000 [Flags] 2 [Guid] 4205895529 [EditorId] 468775139 [Version] 1048832 [Id] OSXPlayer(1,Animeshs-MacBook-Pro.local) [Debug] 0 [PackageName] OSXPlayer [ProjectName] SoccerPPO" to [225.0.0.222:54997]...
+Multi-casting "[IP] 192.168.18.24 [Port] 55001 [Flags] 2 [Guid] 3470539281 [EditorId] 603003034 [Version] 1048832 [Id] OSXPlayer(1,Animeshs-MacBook-Pro.local) [Debug] 0 [PackageName] OSXPlayer [ProjectName] SoccerPPO" to [225.0.0.222:54997]...
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
-[Subsystems] Discovering subsystems at path /Users/animeshagrawal/repositories/SoccerPPO/env1_5v5.app/Contents/Resources/Data/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/animeshagrawal/repositories/SoccerPPO/env5_3v3.app/Contents/Resources/Data/UnitySubsystems
 Forcing GfxDevice: Null
 GfxDevice: creating device client; threaded=0; jobified=0
 NullGfxDevice:
@@ -11,10 +11,24 @@ NullGfxDevice:
     Renderer: Null Device
     Vendor:   Unity Technologies
 Begin MonoManager ReloadAssembly
-- Completed reload, in  0.170 seconds
+- Completed reload, in  0.161 seconds
 ERROR: Shader Sprites/Default shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
 ERROR: Shader Sprites/Mask shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
 ERROR: Shader Legacy Shaders/VertexLit shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard (Specular setup)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Standard (Specular setup) shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard (Specular setup)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Autodesk Interactive' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Autodesk Interactive shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Autodesk Interactive' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 WARNING: Shader Unsupported: 'Standard' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -22,7 +36,322 @@ ERROR: Shader Standard shader is not supported on this GPU (none of subshaders/f
 WARNING: Shader Unsupported: 'Standard' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-UnloadTime: 1.610791 ms
+UnloadTime: 0.983958 ms
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Purple Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:23)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 23)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
+Blue Team Scored GOAL!!!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ball:OnCollisionEnter (UnityEngine.Collision) (at /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs:27)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Assets/Scripts/Ball.cs Line: 27)
+
 Setting up 5 worker threads for Enlighten.
 PlayerConnection::CleanupMemory Statistics:
 [ALLOC_TEMP_TLS] TLS Allocator
@@ -32,8 +361,18 @@ PlayerConnection::CleanupMemory Statistics:
       Current Block Size 64.0 KB
       Peak Allocated Bytes 0 B
       Overflow Count 0
+    [ALLOC_TEMP_AUDIO_Audio Mixer Thread]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_AUDIO_Audio Mixer Thread]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
     [ALLOC_TEMP_MAIN]
-      Peak usage frame count: [4.0 KB-8.0 KB]: 783 frames, [2.0 MB-4.0 MB]: 1 frames
+      Peak usage frame count: [8.0 KB-16.0 KB]: 11108 frames, [2.0 MB-4.0 MB]: 1 frames
       Initial Block Size 4.0 MB
       Current Block Size 4.0 MB
       Peak Allocated Bytes 2.1 MB
@@ -93,11 +432,6 @@ PlayerConnection::CleanupMemory Statistics:
       Current Block Size 32.0 KB
       Peak Allocated Bytes 0 B
       Overflow Count 0
-    [ALLOC_TEMP_Background Job.Worker 15]
-      Initial Block Size 32.0 KB
-      Current Block Size 32.0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
     [ALLOC_TEMP_Background Job.Worker 7]
       Initial Block Size 32.0 KB
       Current Block Size 32.0 KB
@@ -113,15 +447,20 @@ PlayerConnection::CleanupMemory Statistics:
       Current Block Size 256.0 KB
       Peak Allocated Bytes 0 B
       Overflow Count 0
+    [ALLOC_TEMP_Background Job.Worker 15]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
     [ALLOC_TEMP_Loading.PreloadManager]
       Initial Block Size 256.0 KB
       Current Block Size 256.0 KB
-      Peak Allocated Bytes 212.0 KB
+      Peak Allocated Bytes 86.5 KB
       Overflow Count 4
     [ALLOC_TEMP_Profiler.Dispatcher]
       Initial Block Size 64.0 KB
       Current Block Size 64.0 KB
-      Peak Allocated Bytes 0 B
+      Peak Allocated Bytes 1.9 KB
       Overflow Count 0
     [ALLOC_TEMP_Job.Worker 3]
       Initial Block Size 256.0 KB
@@ -166,7 +505,7 @@ PlayerConnection::CleanupMemory Statistics:
     [ALLOC_TEMP_Job.Worker 0]
       Initial Block Size 256.0 KB
       Current Block Size 256.0 KB
-      Peak Allocated Bytes 1.2 KB
+      Peak Allocated Bytes 0 B
       Overflow Count 0
     [ALLOC_TEMP_Job.Worker 5]
       Initial Block Size 256.0 KB
@@ -204,25 +543,25 @@ PlayerConnection::CleanupMemory Statistics:
       Peak Allocated Bytes 190 B
       Overflow Count 0
 [ALLOC_MEMORYPROFILER]
-  Peak usage frame count: [64.0 KB-128.0 KB]: 784 frames
+  Peak usage frame count: [128.0 KB-256.0 KB]: 11109 frames
   Requested Block Size 1.0 MB
   Peak Block count 1
-  Peak Allocated memory 103.0 KB
+  Peak Allocated memory 201.1 KB
   Peak Large allocation bytes 0 B
 [ALLOC_DEFAULT] Dual Thread Allocator
   Peak main deferred allocation count 3
     [ALLOC_BUCKET]
       Large Block size 4.0 MB
       Used Block count 1
-      Peak Allocated bytes 0.9 MB
+      Peak Allocated bytes 1.0 MB
     [ALLOC_DEFAULT_MAIN]
-      Peak usage frame count: [4.0 MB-8.0 MB]: 784 frames
+      Peak usage frame count: [4.0 MB-8.0 MB]: 11109 frames
       Requested Block Size 16.0 MB
       Peak Block count 1
-      Peak Allocated memory 5.1 MB
+      Peak Allocated memory 5.3 MB
       Peak Large allocation bytes 0 B
     [ALLOC_DEFAULT_THREAD]
-      Peak usage frame count: [16.0 MB-32.0 MB]: 784 frames
+      Peak usage frame count: [16.0 MB-32.0 MB]: 11109 frames
       Requested Block Size 16.0 MB
       Peak Block count 1
       Peak Allocated memory 17.2 MB
@@ -252,63 +591,63 @@ PlayerConnection::CleanupMemory Statistics:
     [ALLOC_BUCKET]
       Large Block size 4.0 MB
       Used Block count 1
-      Peak Allocated bytes 0.9 MB
+      Peak Allocated bytes 1.0 MB
     [ALLOC_GFX_MAIN]
-      Peak usage frame count: [32.0 KB-64.0 KB]: 783 frames, [64.0 KB-128.0 KB]: 1 frames
+      Peak usage frame count: [32.0 KB-64.0 KB]: 11108 frames, [64.0 KB-128.0 KB]: 1 frames
       Requested Block Size 16.0 MB
       Peak Block count 1
       Peak Allocated memory 67.0 KB
       Peak Large allocation bytes 0 B
     [ALLOC_GFX_THREAD]
-      Peak usage frame count: [16.0 KB-32.0 KB]: 784 frames
+      Peak usage frame count: [2.0 KB-4.0 KB]: 11109 frames
       Requested Block Size 16.0 MB
       Peak Block count 1
-      Peak Allocated memory 30.6 KB
+      Peak Allocated memory 3.2 KB
       Peak Large allocation bytes 0 B
 [ALLOC_CACHEOBJECTS] Dual Thread Allocator
   Peak main deferred allocation count 0
     [ALLOC_BUCKET]
       Large Block size 4.0 MB
       Used Block count 1
-      Peak Allocated bytes 0.9 MB
+      Peak Allocated bytes 1.0 MB
     [ALLOC_CACHEOBJECTS_MAIN]
-      Peak usage frame count: [0.5 MB-1.0 MB]: 784 frames
+      Peak usage frame count: [0.5 MB-1.0 MB]: 11109 frames
       Requested Block Size 4.0 MB
       Peak Block count 1
       Peak Allocated memory 0.9 MB
       Peak Large allocation bytes 0 B
     [ALLOC_CACHEOBJECTS_THREAD]
-      Peak usage frame count: [256.0 KB-0.5 MB]: 783 frames, [1.0 MB-2.0 MB]: 1 frames
+      Peak usage frame count: [1.0 MB-2.0 MB]: 11108 frames, [2.0 MB-4.0 MB]: 1 frames
       Requested Block Size 4.0 MB
       Peak Block count 1
-      Peak Allocated memory 1.7 MB
+      Peak Allocated memory 3.8 MB
       Peak Large allocation bytes 0 B
 [ALLOC_TYPETREE] Dual Thread Allocator
   Peak main deferred allocation count 0
     [ALLOC_BUCKET]
       Large Block size 4.0 MB
       Used Block count 1
-      Peak Allocated bytes 0.9 MB
+      Peak Allocated bytes 1.0 MB
     [ALLOC_TYPETREE_MAIN]
-      Peak usage frame count: [0-1.0 KB]: 784 frames
+      Peak usage frame count: [0-1.0 KB]: 11109 frames
       Requested Block Size 2.0 MB
       Peak Block count 1
       Peak Allocated memory 1.0 KB
       Peak Large allocation bytes 0 B
     [ALLOC_TYPETREE_THREAD]
-      Peak usage frame count: [0-1.0 KB]: 784 frames
+      Peak usage frame count: [0-1.0 KB]: 11109 frames
       Requested Block Size 2.0 MB
-      Peak Block count 0
-      Peak Allocated memory 0 B
+      Peak Block count 1
+      Peak Allocated memory 0.9 KB
       Peak Large allocation bytes 0 B
 [ALLOC_PROFILER]
-  Peak usage frame count: [32.0 KB-64.0 KB]: 784 frames
+  Peak usage frame count: [32.0 KB-64.0 KB]: 11109 frames
   Requested Block Size 16.0 MB
   Peak Block count 1
-  Peak Allocated memory 34.0 KB
+  Peak Allocated memory 33.9 KB
   Peak Large allocation bytes 0 B
     [ALLOC_PROFILER_BUCKET]
       Large Block size 4.0 MB
       Used Block count 1
-      Peak Allocated bytes 300 B
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1672738699660,"processId":19183,"allocatedMemory":2224481,"memoryLabels":[{"Default":8953},{"Permanent":1240},{"NewDelete":261794},{"Thread":34636},{"Manager":14824},{"VertexData":12},{"Geometry":280},{"Texture":16},{"Shader":67177},{"Material":24},{"GfxDevice":36088},{"Animation":256},{"Audio":3904},{"FontEngine":288},{"Physics":288},{"Serialization":144},{"Input":9008},{"JobScheduler":200},{"Mono":40},{"ScriptingNativeRuntime":192},{"BaseObject":1609092},{"Resource":544},{"Renderer":1936},{"Transform":24},{"File":728},{"WebCam":24},{"Culling":40},{"Terrain":953},{"Wind":24},{"String":3364},{"DynamicArray":30828},{"HashMap":7680},{"Utility":3561},{"PoolAlloc":1160},{"TypeTree":1792},{"ScriptManager":80},{"RuntimeInitializeOnLoadManager":72},{"SpriteAtlas":112},{"GI":3136},{"Unet":16},{"Director":7736},{"WebRequest":816},{"VR":45433},{"SceneManager":424},{"Video":1056},{"LazyScriptCache":32},{"NativeArray":12},{"Camera":25},{"Secure":1},{"SerializationCache":624},{"APIUpdating":5872},{"Subsystems":384},{"VirtualTexturing":57504},{"AssetReference":32}]}
+      Peak Allocated bytes 396 B
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1672841374214,"processId":98146,"allocatedMemory":2233629,"memoryLabels":[{"Default":8953},{"Permanent":1240},{"NewDelete":269494},{"Thread":34636},{"Manager":15552},{"VertexData":12},{"Geometry":280},{"Texture":16},{"Shader":67897},{"Material":24},{"GfxDevice":36088},{"Animation":256},{"Audio":3904},{"FontEngine":288},{"Physics":288},{"Serialization":144},{"Input":9008},{"JobScheduler":200},{"Mono":40},{"ScriptingNativeRuntime":192},{"BaseObject":1609092},{"Resource":544},{"Renderer":1936},{"Transform":24},{"File":728},{"WebCam":24},{"Culling":40},{"Terrain":953},{"Wind":24},{"String":3364},{"DynamicArray":30828},{"HashMap":7680},{"Utility":3561},{"PoolAlloc":1160},{"TypeTree":1792},{"ScriptManager":80},{"RuntimeInitializeOnLoadManager":72},{"SpriteAtlas":112},{"GI":3136},{"Unet":16},{"Director":7736},{"WebRequest":816},{"VR":45433},{"SceneManager":424},{"Video":1056},{"LazyScriptCache":32},{"NativeArray":12},{"Camera":25},{"Secure":1},{"SerializationCache":624},{"APIUpdating":5872},{"Subsystems":384},{"VirtualTexturing":57504},{"AssetReference":32}]}

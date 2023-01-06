@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 978725020}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978725019}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 1387030479}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +146,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387030478}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 1626725431}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626725430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20, y: 3, z: 0}
+  m_LocalPosition: {x: -20.01, y: 3, z: -13.88}
   m_LocalScale: {x: 1, y: 8, z: 20.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -243,7 +243,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626725430}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 1931049509}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,7 +340,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931049508}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -496,6 +496,7 @@ Transform:
   - {fileID: 1387030482}
   - {fileID: 1931049512}
   - {fileID: 1626725434}
+  - {fileID: 8726912562179757715}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -523,15 +524,16 @@ MonoBehaviour:
   ballRbdy: {fileID: 1093500935996709425}
   blueGoal: {fileID: 1093500936943261464}
   redGoal: {fileID: 1093500936931801761}
-  moveSpd: 1
-  punishScale: 100
+  moveSpd: 2
+  punishScale: 100000
   randomRepos: 0
-  goalReward: 15
+  goalReward: 1
   origBlueTeam: []
   origRedTeam: []
-  rewardFreq: 900
+  rewardFreq: 2000
   kickReward: 1
   debugFreq: 5
+  enableKickRew: 0
 --- !u!1001 &135694409146857745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -539,17 +541,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1093500934883008629}
     m_Modifications:
+    - target: {fileID: 1067054139901045569, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: m_DetectableTags.Array.data[5]
+      value: Barrier
+      objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045574, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: env
       value: 
       objectReference: {fileID: 8555821189604553421}
+    - target: {fileID: 1067054139901045574, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: MaxStep
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_InferenceDevice
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045576, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: DecisionPeriod
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045576, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: TakeActionsBetweenDecisions
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045581, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_RootOrder
@@ -632,6 +650,10 @@ PrefabInstance:
       propertyPath: m_RaysPerDirection
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949720, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_DetectableTags.Array.data[5]
+      value: Barrier
+      objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949721, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -680,18 +702,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red3
       objectReference: {fileID: 0}
-    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
-      propertyPath: m_InferenceDevice
+    - target: {fileID: 4947889451794949725, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: DecisionPeriod
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949725, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: TakeActionsBetweenDecisions
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_InferenceDevice
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: env
       value: 
       objectReference: {fileID: 8555821189604553421}
+    - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: MaxStep
+      value: 10000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
 --- !u!114 &5442189427438173712 stripped
@@ -729,6 +763,10 @@ PrefabInstance:
       propertyPath: m_RaysPerDirection
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045569, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: m_DetectableTags.Array.data[5]
+      value: Barrier
+      objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045574, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: env
       value: 
@@ -747,11 +785,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_InferenceDevice
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045576, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: DecisionPeriod
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045576, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: TakeActionsBetweenDecisions
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045581, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_RootOrder
@@ -838,6 +884,10 @@ PrefabInstance:
       propertyPath: m_RaysPerDirection
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045569, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: m_DetectableTags.Array.data[5]
+      value: Barrier
+      objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045574, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: env
       value: 
@@ -856,11 +906,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_InferenceDevice
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045575, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045576, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: DecisionPeriod
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067054139901045576, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
+      propertyPath: TakeActionsBetweenDecisions
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1067054139901045581, guid: acdbe894bd0874ffdbb0c702b0fcd9f1, type: 3}
       propertyPath: m_RootOrder
@@ -943,6 +1001,10 @@ PrefabInstance:
       propertyPath: m_RaysPerDirection
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949720, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_DetectableTags.Array.data[5]
+      value: Barrier
+      objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949721, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -991,22 +1053,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red2
       objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949725, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: DecisionPeriod
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949725, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: TakeActionsBetweenDecisions
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_Model
       value: 
       objectReference: {fileID: 11400000, guid: 68991653e04394f95b15a222253c0729, type: 3}
     - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_InferenceDevice
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: env
       value: 
       objectReference: {fileID: 8555821189604553421}
+    - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: MaxStep
+      value: 10000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
 --- !u!4 &5442189427319817449 stripped
@@ -1117,6 +1191,10 @@ PrefabInstance:
     - target: {fileID: 4436319205080917209, guid: 69cee16dae5b64fb0aa1e74b8b543c2f, type: 3}
       propertyPath: m_TagString
       value: RedGoal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772457247080628672, guid: 69cee16dae5b64fb0aa1e74b8b543c2f, type: 3}
+      propertyPath: m_TagString
+      value: Barrier
       objectReference: {fileID: 0}
     - target: {fileID: 9180328903654421332, guid: 69cee16dae5b64fb0aa1e74b8b543c2f, type: 3}
       propertyPath: m_RootOrder
@@ -1302,6 +1380,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4179155088706168487, guid: 2debb4bfaca2246a7b75edda8381ec5b, type: 3}
+      propertyPath: m_TagString
+      value: Barrier
+      objectReference: {fileID: 0}
     - target: {fileID: 4179155088728848853, guid: 2debb4bfaca2246a7b75edda8381ec5b, type: 3}
       propertyPath: m_TagString
       value: BlueGoal
@@ -1328,7 +1410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7658749747240026397, guid: 2debb4bfaca2246a7b75edda8381ec5b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.52
       objectReference: {fileID: 0}
     - target: {fileID: 7658749747240026397, guid: 2debb4bfaca2246a7b75edda8381ec5b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1455,6 +1537,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1093500935755701832}
     m_Modifications:
+    - target: {fileID: 4947889451794949720, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_DetectableTags.Array.data[5]
+      value: Barrier
+      objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949721, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1503,18 +1589,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red1
       objectReference: {fileID: 0}
-    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
-      propertyPath: m_InferenceDevice
+    - target: {fileID: 4947889451794949725, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: DecisionPeriod
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949725, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: TakeActionsBetweenDecisions
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: m_InferenceDevice
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947889451794949726, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
       propertyPath: env
       value: 
       objectReference: {fileID: 8555821189604553421}
+    - target: {fileID: 4947889451794949727, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
+      propertyPath: MaxStep
+      value: 10000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
 --- !u!114 &1093500936174566282 stripped
@@ -1532,4 +1630,66 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4947889451794949721, guid: 55b0bca113fa0435686ac62edc454ac2, type: 3}
   m_PrefabInstance: {fileID: 5442189426318777813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9121620763498197368
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2627456758256043025}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+      propertyPath: m_Name
+      value: Pitch
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+--- !u!4 &8726912562179757715 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 56bd88d1d04684781a288d1989ca2215, type: 3}
+  m_PrefabInstance: {fileID: 9121620763498197368}
   m_PrefabAsset: {fileID: 0}

@@ -1,24 +1,27 @@
 {
+    "ball_touch": {
+        "lesson_num": 0
+    },
     "SoccerAgent": {
-        "elo": 1200.0,
+        "elo": 1198.5170797835679,
         "checkpoints": [
             {
-                "steps": 72000,
-                "file_path": "results/ppo/SoccerAgent/SoccerAgent-72000.onnx",
-                "reward": 0.17607145011425018,
-                "creation_time": 1672738880.9658492,
+                "steps": 72351,
+                "file_path": "results/ppo/SoccerAgent/SoccerAgent-72351.onnx",
+                "reward": null,
+                "creation_time": 1672990336.767307,
                 "auxillary_file_paths": [
-                    "results/ppo/SoccerAgent/SoccerAgent-72000.pt"
+                    "results/ppo/SoccerAgent/SoccerAgent-72351.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 72000,
+            "steps": 72351,
             "file_path": "results/ppo/SoccerAgent.onnx",
-            "reward": 0.17607145011425018,
-            "creation_time": 1672738880.9658492,
+            "reward": null,
+            "creation_time": 1672990336.767307,
             "auxillary_file_paths": [
-                "results/ppo/SoccerAgent/SoccerAgent-72000.pt"
+                "results/ppo/SoccerAgent/SoccerAgent-72351.pt"
             ]
         }
     },

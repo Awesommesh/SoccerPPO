@@ -1,0 +1,58 @@
+Mono path[0] = '/Users/animeshagrawal/repositories/SoccerPPO/env5_3v3.app/Contents/Resources/Data/Managed'
+Mono config path = '/Users/animeshagrawal/repositories/SoccerPPO/env5_3v3.app/Contents/MonoBleedingEdge/etc'
+Found 2 interfaces on host : 0) 192.168.18.24 1) 192.168.64.1
+Multi-casting "[IP] 192.168.18.24 [Port] 55000 [Flags] 2 [Guid] 1285904574 [EditorId] 603003034 [Version] 1048832 [Id] OSXPlayer(1,Animeshs-MacBook-Pro.local) [Debug] 0 [PackageName] OSXPlayer [ProjectName] SoccerPPO" to [225.0.0.222:54997]...
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path /Users/animeshagrawal/repositories/SoccerPPO/env5_3v3.app/Contents/Resources/Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0; jobified=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.184 seconds
+ERROR: Shader Sprites/Default shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Sprites/Mask shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Legacy Shaders/VertexLit shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard (Specular setup)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Standard (Specular setup) shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard (Specular setup)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Autodesk Interactive' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Autodesk Interactive shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Autodesk Interactive' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Standard' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Standard shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+UnloadTime: 2.973334 ms
+Couldn't connect to trainer on port 5005 using API version 1.5.0. Will perform inference instead.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Unity.MLAgents.Academy:InitializeEnvironment () (at /Users/animeshagrawal/repositories/SoccerPPO/Library/PackageCache/com.unity.ml-agents@2.0.1/Runtime/Academy.cs:459)
+Unity.MLAgents.Academy:LazyInitialize () (at /Users/animeshagrawal/repositories/SoccerPPO/Library/PackageCache/com.unity.ml-agents@2.0.1/Runtime/Academy.cs:279)
+Unity.MLAgents.Academy:.ctor () (at /Users/animeshagrawal/repositories/SoccerPPO/Library/PackageCache/com.unity.ml-agents@2.0.1/Runtime/Academy.cs:248)
+Unity.MLAgents.Academy/<>c:<.cctor>b__82_0 () (at /Users/animeshagrawal/repositories/SoccerPPO/Library/PackageCache/com.unity.ml-agents@2.0.1/Runtime/Academy.cs:117)
+System.Lazy`1<Unity.MLAgents.Academy>:ViaFactory (System.Threading.LazyThreadSafetyMode)
+System.Lazy`1<Unity.MLAgents.Academy>:ExecutionAndPublication (System.LazyHelper,bool)
+System.Lazy`1<Unity.MLAgents.Academy>:CreateValue ()
+System.Lazy`1<Unity.MLAgents.Academy>:get_Value ()
+Unity.MLAgents.Academy:get_Instance () (at /Users/animeshagrawal/repositories/SoccerPPO/Library/PackageCache/com.unity.ml-agents@2.0.1/Runtime/Academy.cs:132)
+Unity.MLAgents.Agent:LazyInitialize () (at /Users/animeshagrawal/repositories/SoccerPPO/Library/PackageCache/com.unity.ml-agents@2.0.1/Runtime/Agent.cs:451)
+Unity.MLAgents.Agent:OnEnable () (at /Users/animeshagrawal/repositories/SoccerPPO/Library/PackageCache/com.unity.ml-agents@2.0.1/Runtime/Agent.cs:365)
+
+(Filename: /Users/animeshagrawal/repositories/SoccerPPO/Library/PackageCache/com.unity.ml-agents@2.0.1/Runtime/Academy.cs Line: 459)
+

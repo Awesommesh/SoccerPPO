@@ -1,0 +1,37 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1673007046",
+        "python_version": "3.9.7 (default, Sep 16 2021, 08:50:36) \n[Clang 10.0.0 ]",
+        "command_line_arguments": "/opt/anaconda3/bin/mlagents-learn ./Assets/Configs/self_play.yaml --run-id curriculum --inference --resume --time-scale 2 --target-frame-rate 80",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.11.0",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1673007108"
+    },
+    "total": 62.191885417,
+    "count": 1,
+    "self": 0.024703833000003783,
+    "children": {
+        "run_training.setup": {
+            "total": 0.08315937499999992,
+            "count": 1,
+            "self": 0.08315937499999992
+        },
+        "TrainerController.start_learning": {
+            "total": 62.084022209,
+            "count": 1,
+            "self": 7.154200000059063e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 62.083950666999996,
+                    "count": 1,
+                    "self": 62.083950666999996
+                }
+            }
+        }
+    }
+}

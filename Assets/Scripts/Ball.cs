@@ -13,33 +13,18 @@ public class Ball : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody>();
     }
 
-    void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("BlueGoal") == true) {
-            //Debug.Log("Blue GOAL!");
-            env.goal(true);
-            env.resetEnv(true);
-        } else if (other.gameObject.CompareTag("RedGoal") == true) {
-            //Debug.Log("Red GOAL!");
-            env.goal(false);
-            env.resetEnv(true);
-        }
-    }
 
     void Update() {
         curVel = rb.velocity;
     }
 
     void OnCollisionEnter(Collision other) {
-        if (other.gameObject.CompareTag("BluePlayer") == true) {
-            //Debug.Log("Blue Kick!");
-            env.kick(true);
-        } else if (other.gameObject.CompareTag("RedPlayer") == true) {
-            //Debug.Log("Red Kick!");
-            env.kick(false);
-        } else {
-            float speed = curVel.magnitude;
-            Vector3 dir = Vector3.Reflect(curVel.normalized, other.contacts[0].normal);
-            rb.velocity = dir * Mathf.Max(speed, 0f);
+        if (other.gameObject.CompareTag("blueGoal") == true) {
+            Debug.Log("Purple Team Scored GOAL!!!");
+            env.goal(false);
+        } else if (other.gameObject.CompareTag("purpleGoal") == true) {
+            env.goal(true);
+            Debug.Log("Blue Team Scored GOAL!!!");
         }
 
     }
