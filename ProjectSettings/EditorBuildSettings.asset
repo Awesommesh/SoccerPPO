@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/5v5Soccer.unity
     guid: 5f62fe7d003dd4a5c9db49eb7a41df53
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Train3v3_8env.unity
     guid: 9c2d6449127fb413daa3cac58b4c025b
+  - enabled: 1
+    path: Assets/Scenes/AdvancedTrain3v3.unity
+    guid: b23f79d126deb485580206e0d8bc7594
   m_configObjects: {}

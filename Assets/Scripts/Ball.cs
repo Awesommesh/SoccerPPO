@@ -8,6 +8,8 @@ public class Ball : MonoBehaviour
     Vector3 curVel;
     Rigidbody rb;
     public Environment env;
+    public EnvironmentAdvanced envAdv;
+    public bool advanced;
 
     void Awake() {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -21,9 +23,18 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision other) {
         if (other.gameObject.CompareTag("blueGoal") == true) {
             Debug.Log("Purple Team Scored GOAL!!!");
-            env.goal(false);
+            if (advanced) {
+                envAdv.goal(false);
+            } else {
+                env.goal(false);
+            }
+            
         } else if (other.gameObject.CompareTag("purpleGoal") == true) {
-            env.goal(true);
+            if (advanced) {
+                envAdv.goal(true);
+            } else {
+                env.goal(true);
+            }
             Debug.Log("Blue Team Scored GOAL!!!");
         }
 
