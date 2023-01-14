@@ -1,0 +1,39 @@
+{
+    "ball_touch": {
+        "lesson_num": 2
+    },
+    "existential": {
+        "lesson_num": 0
+    },
+    "jump_power": {
+        "lesson_num": 0
+    },
+    "SoccerAgentAdvanced": {
+        "elo": 1198.5391075271673,
+        "checkpoints": [
+            {
+                "steps": 135696,
+                "file_path": "results/curriculum_3/SoccerAgentAdvanced/SoccerAgentAdvanced-135696.onnx",
+                "reward": null,
+                "creation_time": 1673402367.106355,
+                "auxillary_file_paths": [
+                    "results/curriculum_3/SoccerAgentAdvanced/SoccerAgentAdvanced-135696.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 135696,
+            "file_path": "results/curriculum_3/SoccerAgentAdvanced.onnx",
+            "reward": null,
+            "creation_time": 1673402367.106355,
+            "auxillary_file_paths": [
+                "results/curriculum_3/SoccerAgentAdvanced/SoccerAgentAdvanced-135696.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0"
+    }
+}

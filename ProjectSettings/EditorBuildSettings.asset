@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/5v5Soccer.unity
-    guid: 5f62fe7d003dd4a5c9db49eb7a41df53
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/Train3v3_8env.unity
     guid: 9c2d6449127fb413daa3cac58b4c025b

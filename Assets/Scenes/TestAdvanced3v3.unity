@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 1482850592295749424, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -144,19 +148,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 61
+      value: 26.2
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -45.5
+      value: -40.2
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8660254
+      value: 0.92387956
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5
+      value: 0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -168,7 +172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1482850592295749427, guid: 240a166875e474e1b9be9df203372ef0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -235,6 +239,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 896407441160948004, guid: 76f7f5c39cc624f249ff4516fd373439, type: 3}
+      propertyPath: gravityMultiplier
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 896407441160948005, guid: 76f7f5c39cc624f249ff4516fd373439, type: 3}
+      propertyPath: jumpPower
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 896407441160948005, guid: 76f7f5c39cc624f249ff4516fd373439, type: 3}
+      propertyPath: agentMoveSpeedAir
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f5c39cc624f249ff4516fd373439, type: 3}
 --- !u!1001 &1791106507
@@ -244,6 +260,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 265512307876241828, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 265512308746043449, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 265512309120575773, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_Name
       value: AdvEnvironment
@@ -292,65 +316,89 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 265512309376315157, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 265512309767019180, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2384806988067355689, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3a1a8e49cffab4accba90dd9572558c3, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: f6ee1d59bc5214249a3e6e9b2f4c290f, type: 3}
     - target: {fileID: 2384806988067355689, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BehaviorType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2384806988067355689, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 63
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2384806988067355689, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2384806988067355691, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: inferenceMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384806988466473080, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: inferenceMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2384806988466473086, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 16ceac93621af47b18a184d3793622ff, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: efb0e538526654d83b365206705252ee, type: 3}
     - target: {fileID: 2384806988466473086, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BehaviorType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2384806988466473086, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 63
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2384806988466473086, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2384806989450220234, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: inferenceMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2384806989450220237, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 16ceac93621af47b18a184d3793622ff, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: efb0e538526654d83b365206705252ee, type: 3}
     - target: {fileID: 2384806989450220237, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BehaviorType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2384806989450220237, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 63
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2384806989450220237, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2384806989788410736, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: inferenceMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2384806989788410742, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3a1a8e49cffab4accba90dd9572558c3, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: f6ee1d59bc5214249a3e6e9b2f4c290f, type: 3}
     - target: {fileID: 2384806989788410742, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BehaviorType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2384806989788410742, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 63
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2384806989788410742, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
@@ -359,14 +407,14 @@ PrefabInstance:
     - target: {fileID: 6818836153421573059, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 3a1a8e49cffab4accba90dd9572558c3, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: f6ee1d59bc5214249a3e6e9b2f4c290f, type: 3}
     - target: {fileID: 6818836153421573059, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BehaviorType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6818836153421573059, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 63
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 6818836153421573059, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
@@ -375,18 +423,34 @@ PrefabInstance:
     - target: {fileID: 6818915787275875527, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: 16ceac93621af47b18a184d3793622ff, type: 3}
+      objectReference: {fileID: 5022602860645237092, guid: efb0e538526654d83b365206705252ee, type: 3}
     - target: {fileID: 6818915787275875527, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BehaviorType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6818915787275875527, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 63
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 6818915787275875527, guid: 1c98836ab89434156966c6baf335813c, type: 3}
       propertyPath: m_BrainParameters.NumStackedVectorObservations
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941444731966088740, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: inferenceMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941505640246376752, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: inferenceMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942656266159009600, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942737821244330338, guid: 1c98836ab89434156966c6baf335813c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c98836ab89434156966c6baf335813c, type: 3}

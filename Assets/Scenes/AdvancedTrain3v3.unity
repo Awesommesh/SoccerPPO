@@ -691,14 +691,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Settings
       objectReference: {fileID: 0}
-    - target: {fileID: 896407441160948005, guid: 76f7f5c39cc624f249ff4516fd373439, type: 3}
-      propertyPath: jumpPower
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 896407441160948005, guid: 76f7f5c39cc624f249ff4516fd373439, type: 3}
-      propertyPath: agentMoveSpeedAir
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76f7f5c39cc624f249ff4516fd373439, type: 3}
 --- !u!1001 &5730970712809058453

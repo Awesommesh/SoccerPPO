@@ -1,0 +1,75 @@
+{
+    "ball_touch": {
+        "lesson_num": 0
+    },
+    "existential": {
+        "lesson_num": 0
+    },
+    "jump_power": {
+        "lesson_num": 0
+    },
+    "SoccerAgentAdvanced": {
+        "checkpoints": [
+            {
+                "steps": 5499922,
+                "file_path": "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-5499922.onnx",
+                "reward": -0.13696664292365313,
+                "creation_time": 1673478885.799668,
+                "auxillary_file_paths": [
+                    "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-5499922.pt"
+                ]
+            },
+            {
+                "steps": 5999909,
+                "file_path": "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-5999909.onnx",
+                "reward": -0.09806665343542893,
+                "creation_time": 1673482939.822763,
+                "auxillary_file_paths": [
+                    "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-5999909.pt"
+                ]
+            },
+            {
+                "steps": 6499678,
+                "file_path": "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-6499678.onnx",
+                "reward": -0.13743271074737562,
+                "creation_time": 1673486871.8995168,
+                "auxillary_file_paths": [
+                    "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-6499678.pt"
+                ]
+            },
+            {
+                "steps": 6999823,
+                "file_path": "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-6999823.onnx",
+                "reward": 0.03059198831518491,
+                "creation_time": 1673491011.8642938,
+                "auxillary_file_paths": [
+                    "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-6999823.pt"
+                ]
+            },
+            {
+                "steps": 7031091,
+                "file_path": "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-7031091.onnx",
+                "reward": 0.016878656297922134,
+                "creation_time": 1673491033.753813,
+                "auxillary_file_paths": [
+                    "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-7031091.pt"
+                ]
+            }
+        ],
+        "elo": 1150.9943732847928,
+        "final_checkpoint": {
+            "steps": 7031091,
+            "file_path": "results/curriculum_5/SoccerAgentAdvanced.onnx",
+            "reward": 0.016878656297922134,
+            "creation_time": 1673491033.753813,
+            "auxillary_file_paths": [
+                "results/curriculum_5/SoccerAgentAdvanced/SoccerAgentAdvanced-7031091.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0"
+    }
+}

@@ -49,6 +49,8 @@ MonoBehaviour:
   blueMaterial: {fileID: 2100000, guid: dfb7296a023f547e899dba4f66c611b5, type: 2}
   randomizePlayersTeamForTraining: 1
   agentMoveSpeed: 2
+  jumpPower: 1000
+  agentMoveSpeedAir: 2
 --- !u!114 &896407441160948004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350253ac94293470bbb8ec230d6da3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityMultiplier: 1
+  gravityMultiplier: 5
   fixedDeltaTime: 0.02
   maximumDeltaTime: 0.33333334
   solverIterations: 6

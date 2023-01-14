@@ -30,7 +30,7 @@ public class SoccerAgentAdvanced : Agent
     //the coefficient for jumping
     float jumpCoeff;
 
-    const float k_Power = 2000f;
+    const float k_Power = 75f;
     float existential;
     float lateralSpeed;
     float forwardSpeed;
@@ -51,10 +51,12 @@ public class SoccerAgentAdvanced : Agent
     List<EnvironmentAdvanced.PlayerInfo> agents;
 
     public Ball ball;
+    public bool inferenceMode;
 
     int maxEnvironmentSteps;
 
     EnvironmentParameters resetParams;
+    int yKickDir;
 
     public override void Initialize()
     {
@@ -141,14 +143,21 @@ public class SoccerAgentAdvanced : Agent
         var moveLateral = act[1];
         var rotate = act[2];
         var jump = act[3];
+
+        yKickDir = act[4];
+
         bool grounded = Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
         //Debug.Log(Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f));
         //go forward
         if (moveForward == 1) {//Can only kick while moving forward (no backward kicks for now)
             dirToGo = transform.forward * forwardSpeed;
-            kickPower = 1f;
+            
         } else if (moveForward == 2) { //go backward
             dirToGo = transform.forward * -forwardSpeed;
+        }
+
+        if (moveForward <= 1) {
+            kickPower = 1f;
         }
         
         //Moving sideways will override moving forwards/backwards
@@ -159,6 +168,9 @@ public class SoccerAgentAdvanced : Agent
             dirToGo = transform.right * -lateralSpeed;
         }
         if (jump == 1 && grounded) {//Add jump force
+            if (inferenceMode) {
+                jumpCoeff = 1;
+            }
             jumpDir = transform.up * soccerSettings.jumpPower * jumpCoeff;
         }
 
@@ -227,6 +239,14 @@ public class SoccerAgentAdvanced : Agent
         if (Input.GetKey(KeyCode.Space)) {
             discreteActionsOut[3] = 1;
         }
+
+        //Kick Y dir
+        discreteActionsOut[4] = 0;
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            discreteActionsOut[4] = 1;
+        } else if (Input.GetKey(KeyCode.DownArrow)) {
+            discreteActionsOut[4] = 2;
+        }
     }
 
     /// <summary>
@@ -238,9 +258,16 @@ public class SoccerAgentAdvanced : Agent
         if (c.gameObject.CompareTag("ball"))
         {
             AddReward(.2f * ballTouch);
-            var dir = c.contacts[0].point - transform.position;
+            Vector3 dir = c.contacts[0].point - transform.position;
+            dir.y = 0;
             dir = dir.normalized;
-            c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
+            Vector3 dir2 = Vector3.up;
+            if (yKickDir == 0) {//kick parallel to the ground
+                dir2 = Vector3.zero;
+            } else if (yKickDir == 2) {//kick down
+                dir2 = Vector3.up*-1;
+            }
+            c.gameObject.GetComponent<Rigidbody>().AddForce((dir+dir2) * force, ForceMode.Impulse);
         }
     }
 }

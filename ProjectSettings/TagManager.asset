@@ -10,6 +10,14 @@ TagManager:
   - BlueGoal
   - RedGoal
   - Barrier
+  - ball
+  - blueAgent
+  - purpleAgent
+  - blueGoal
+  - purpleGoal
+  - wall
+  - roof
+  - floor
   layers:
   - Default
   - TransparentFX
